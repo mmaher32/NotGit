@@ -15,9 +15,9 @@ import re
 import sys
 import zlib
 
-############################
-#Abstract
-###########################
+# ==========================
+# Abstract
+# ==========================
 
 
 
@@ -74,6 +74,7 @@ class GitBlob(GitObject):
         return self.blobdata
     def deserialize(self,data):
         self.blobdata=data
+
 ############################
 
 def repo_path(repo, *path):
@@ -221,6 +222,10 @@ def object_write(obj, repo=None):
                 # Compress and write
                 f.write(zlib.compress(result))
     return sha    
+
+
+
+
 # =========================
 # CLI
 # =========================
@@ -257,6 +262,12 @@ def cmd_init(args):
     repo_create(args.path)
 
 
+
+
+
+# =========
+# Main
+# =========
 def main(argv=sys.argv[1:]):
 
     args = argparser.parse_args(argv)
