@@ -1,2 +1,4 @@
 testrepo/
 testrepo2/
+__pycache__/
+*.pyc
