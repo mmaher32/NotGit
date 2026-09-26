@@ -1580,17 +1580,17 @@ def main(argv=sys.argv[1:]):
         case "init":
             cmd_init(args)
 
-        # case "add":
-        #     cmd_add(args)
+        case "add":
+            cmd_add(args)
 
-        # case "commit":
-        #     cmd_commit(args)
+        case "commit":
+            cmd_commit(args)
 
-        # case "status":
-        #     cmd_status(args)
+        case "status":
+            cmd_status(args)
 
-        # case _:
-        #     print("Bad Command.")
+        case _:
+            print("Bad Command.")
 
 
 if __name__ == "__main__":
